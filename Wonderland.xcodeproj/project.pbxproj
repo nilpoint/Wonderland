@@ -14,6 +14,8 @@
 		5277A18D1BAEF55A00C59690 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5277A18C1BAEF55A00C59690 /* Images.xcassets */; };
 		5277A1901BAEF55A00C59690 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5277A18E1BAEF55A00C59690 /* LaunchScreen.xib */; };
 		5277A19C1BAEF55A00C59690 /* WonderlandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5277A19B1BAEF55A00C59690 /* WonderlandTests.swift */; };
+		5277A1A81BAEFA0500C59690 /* Alice.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5277A1A61BAEFA0500C59690 /* Alice.txt */; };
+		5277A1A91BAEFA0500C59690 /* Characters.nsarray in Resources */ = {isa = PBXBuildFile; fileRef = 5277A1A71BAEFA0500C59690 /* Characters.nsarray */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		5277A1951BAEF55A00C59690 /* WonderlandTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WonderlandTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5277A19A1BAEF55A00C59690 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5277A19B1BAEF55A00C59690 /* WonderlandTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WonderlandTests.swift; sourceTree = "<group>"; };
+		5277A1A61BAEFA0500C59690 /* Alice.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Alice.txt; sourceTree = "<group>"; };
+		5277A1A71BAEFA0500C59690 /* Characters.nsarray */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Characters.nsarray; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,7 @@
 				5277A1891BAEF55A00C59690 /* Main.storyboard */,
 				5277A18C1BAEF55A00C59690 /* Images.xcassets */,
 				5277A18E1BAEF55A00C59690 /* LaunchScreen.xib */,
+				5277A1A51BAEFA0500C59690 /* Data Resources */,
 				5277A1811BAEF55A00C59690 /* Supporting Files */,
 			);
 			path = Wonderland;
@@ -113,6 +118,15 @@
 				5277A19A1BAEF55A00C59690 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5277A1A51BAEFA0500C59690 /* Data Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5277A1A61BAEFA0500C59690 /* Alice.txt */,
+				5277A1A71BAEFA0500C59690 /* Characters.nsarray */,
+			);
+			path = "Data Resources";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,8 +210,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5277A18B1BAEF55A00C59690 /* Main.storyboard in Resources */,
+				5277A1A81BAEFA0500C59690 /* Alice.txt in Resources */,
 				5277A1901BAEF55A00C59690 /* LaunchScreen.xib in Resources */,
 				5277A18D1BAEF55A00C59690 /* Images.xcassets in Resources */,
+				5277A1A91BAEFA0500C59690 /* Characters.nsarray in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
