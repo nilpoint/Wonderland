@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		5277A1841BAEF55A00C59690 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5277A1831BAEF55A00C59690 /* AppDelegate.swift */; };
 		5277A1861BAEF55A00C59690 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5277A1851BAEF55A00C59690 /* FirstViewController.swift */; };
-		5277A1881BAEF55A00C59690 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5277A1871BAEF55A00C59690 /* SecondViewController.swift */; };
 		5277A18B1BAEF55A00C59690 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5277A1891BAEF55A00C59690 /* Main.storyboard */; };
 		5277A18D1BAEF55A00C59690 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5277A18C1BAEF55A00C59690 /* Images.xcassets */; };
 		5277A1901BAEF55A00C59690 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5277A18E1BAEF55A00C59690 /* LaunchScreen.xib */; };
 		5277A19C1BAEF55A00C59690 /* WonderlandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5277A19B1BAEF55A00C59690 /* WonderlandTests.swift */; };
 		5277A1A81BAEFA0500C59690 /* Alice.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5277A1A61BAEFA0500C59690 /* Alice.txt */; };
 		5277A1A91BAEFA0500C59690 /* Characters.nsarray in Resources */ = {isa = PBXBuildFile; fileRef = 5277A1A71BAEFA0500C59690 /* Characters.nsarray */; };
+		52F1EE291BB031AE00617743 /* CharacterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F1EE281BB031AE00617743 /* CharacterTableViewController.swift */; };
+		52F1EE2B1BB031F000617743 /* CharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F1EE2A1BB031F000617743 /* CharacterDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +34,6 @@
 		5277A1821BAEF55A00C59690 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5277A1831BAEF55A00C59690 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5277A1851BAEF55A00C59690 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		5277A1871BAEF55A00C59690 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		5277A18A1BAEF55A00C59690 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5277A18C1BAEF55A00C59690 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5277A18F1BAEF55A00C59690 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -42,6 +42,8 @@
 		5277A19B1BAEF55A00C59690 /* WonderlandTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WonderlandTests.swift; sourceTree = "<group>"; };
 		5277A1A61BAEFA0500C59690 /* Alice.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Alice.txt; sourceTree = "<group>"; };
 		5277A1A71BAEFA0500C59690 /* Characters.nsarray */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Characters.nsarray; sourceTree = "<group>"; };
+		52F1EE281BB031AE00617743 /* CharacterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterTableViewController.swift; sourceTree = "<group>"; };
+		52F1EE2A1BB031F000617743 /* CharacterDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +87,8 @@
 			children = (
 				5277A1831BAEF55A00C59690 /* AppDelegate.swift */,
 				5277A1851BAEF55A00C59690 /* FirstViewController.swift */,
-				5277A1871BAEF55A00C59690 /* SecondViewController.swift */,
+				52F1EE281BB031AE00617743 /* CharacterTableViewController.swift */,
+				52F1EE2A1BB031F000617743 /* CharacterDetailViewController.swift */,
 				5277A1891BAEF55A00C59690 /* Main.storyboard */,
 				5277A18C1BAEF55A00C59690 /* Images.xcassets */,
 				5277A18E1BAEF55A00C59690 /* LaunchScreen.xib */,
@@ -231,8 +234,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5277A1881BAEF55A00C59690 /* SecondViewController.swift in Sources */,
 				5277A1841BAEF55A00C59690 /* AppDelegate.swift in Sources */,
+				52F1EE2B1BB031F000617743 /* CharacterDetailViewController.swift in Sources */,
+				52F1EE291BB031AE00617743 /* CharacterTableViewController.swift in Sources */,
 				5277A1861BAEF55A00C59690 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,6 +435,7 @@
 				5277A1A11BAEF55A00C59690 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5277A1A21BAEF55A00C59690 /* Build configuration list for PBXNativeTarget "WonderlandTests" */ = {
 			isa = XCConfigurationList;
@@ -439,6 +444,7 @@
 				5277A1A41BAEF55A00C59690 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
