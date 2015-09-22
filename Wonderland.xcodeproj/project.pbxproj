@@ -15,6 +15,11 @@
 		5277A19C1BAEF55A00C59690 /* WonderlandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5277A19B1BAEF55A00C59690 /* WonderlandTests.swift */; };
 		5277A1A81BAEFA0500C59690 /* Alice.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5277A1A61BAEFA0500C59690 /* Alice.txt */; };
 		5277A1A91BAEFA0500C59690 /* Characters.nsarray in Resources */ = {isa = PBXBuildFile; fileRef = 5277A1A71BAEFA0500C59690 /* Characters.nsarray */; };
+		52BF7AD41BB12F07009CD377 /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BF7AD31BB12F07009CD377 /* BookViewController.swift */; };
+		52BF7AD61BB12F68009CD377 /* BookDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BF7AD51BB12F68009CD377 /* BookDataSource.swift */; };
+		52BF7AD81BB12FB1009CD377 /* OnePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BF7AD71BB12FB1009CD377 /* OnePageViewController.swift */; };
+		52BF7ADA1BB1302A009CD377 /* OnePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BF7AD91BB1302A009CD377 /* OnePageView.swift */; };
+		52BF7ADC1BB131F7009CD377 /* Paginator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BF7ADB1BB131F7009CD377 /* Paginator.swift */; };
 		52F1EE291BB031AE00617743 /* CharacterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F1EE281BB031AE00617743 /* CharacterTableViewController.swift */; };
 		52F1EE2B1BB031F000617743 /* CharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F1EE2A1BB031F000617743 /* CharacterDetailViewController.swift */; };
 /* End PBXBuildFile section */
@@ -42,6 +47,11 @@
 		5277A19B1BAEF55A00C59690 /* WonderlandTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WonderlandTests.swift; sourceTree = "<group>"; };
 		5277A1A61BAEFA0500C59690 /* Alice.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Alice.txt; sourceTree = "<group>"; };
 		5277A1A71BAEFA0500C59690 /* Characters.nsarray */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Characters.nsarray; sourceTree = "<group>"; };
+		52BF7AD31BB12F07009CD377 /* BookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
+		52BF7AD51BB12F68009CD377 /* BookDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookDataSource.swift; sourceTree = "<group>"; };
+		52BF7AD71BB12FB1009CD377 /* OnePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnePageViewController.swift; sourceTree = "<group>"; };
+		52BF7AD91BB1302A009CD377 /* OnePageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnePageView.swift; sourceTree = "<group>"; };
+		52BF7ADB1BB131F7009CD377 /* Paginator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Paginator.swift; sourceTree = "<group>"; };
 		52F1EE281BB031AE00617743 /* CharacterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterTableViewController.swift; sourceTree = "<group>"; };
 		52F1EE2A1BB031F000617743 /* CharacterDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,6 +99,11 @@
 				5277A1851BAEF55A00C59690 /* FirstViewController.swift */,
 				52F1EE281BB031AE00617743 /* CharacterTableViewController.swift */,
 				52F1EE2A1BB031F000617743 /* CharacterDetailViewController.swift */,
+				52BF7AD31BB12F07009CD377 /* BookViewController.swift */,
+				52BF7AD51BB12F68009CD377 /* BookDataSource.swift */,
+				52BF7AD71BB12FB1009CD377 /* OnePageViewController.swift */,
+				52BF7AD91BB1302A009CD377 /* OnePageView.swift */,
+				52BF7ADB1BB131F7009CD377 /* Paginator.swift */,
 				5277A1891BAEF55A00C59690 /* Main.storyboard */,
 				5277A18C1BAEF55A00C59690 /* Images.xcassets */,
 				5277A18E1BAEF55A00C59690 /* LaunchScreen.xib */,
@@ -236,8 +251,13 @@
 			files = (
 				5277A1841BAEF55A00C59690 /* AppDelegate.swift in Sources */,
 				52F1EE2B1BB031F000617743 /* CharacterDetailViewController.swift in Sources */,
+				52BF7ADC1BB131F7009CD377 /* Paginator.swift in Sources */,
+				52BF7AD41BB12F07009CD377 /* BookViewController.swift in Sources */,
 				52F1EE291BB031AE00617743 /* CharacterTableViewController.swift in Sources */,
+				52BF7AD81BB12FB1009CD377 /* OnePageViewController.swift in Sources */,
 				5277A1861BAEF55A00C59690 /* FirstViewController.swift in Sources */,
+				52BF7ADA1BB1302A009CD377 /* OnePageView.swift in Sources */,
+				52BF7AD61BB12F68009CD377 /* BookDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

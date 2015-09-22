@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Welcome-->
@@ -90,6 +91,56 @@
             </objects>
             <point key="canvasLocation" x="1570" y="376"/>
         </scene>
+        <!--One Page View Controller-->
+        <scene sceneID="0MQ-Sf-PUO">
+            <objects>
+                <viewController storyboardIdentifier="OnePage" id="NNj-lo-fAb" customClass="OnePageViewController" customModule="Wonderland" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jeU-6y-yub"/>
+                        <viewControllerLayoutGuide type="bottom" id="23g-zG-ko0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dmW-rJ-3Ih" customClass="OnePageView" customModule="Wonderland" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alice’s Adventures in Wonderland" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zht-8v-sLk">
+                                <rect key="frame" x="186" y="28" width="229" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ed0-dY-0zD">
+                                <rect key="frame" x="286" y="578" width="29" height="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="13Z-Pf-Hsa" customClass="OnePageView" customModule="Wonderland" customModuleProvider="target">
+                                <rect key="frame" x="36" y="66" width="528" height="492"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="13Z-Pf-Hsa" firstAttribute="top" secondItem="Zht-8v-sLk" secondAttribute="bottom" constant="20" id="75K-4F-2l6"/>
+                            <constraint firstItem="23g-zG-ko0" firstAttribute="top" secondItem="ed0-dY-0zD" secondAttribute="bottom" constant="8" symbolic="YES" id="D5e-6x-PhI"/>
+                            <constraint firstAttribute="centerX" secondItem="Zht-8v-sLk" secondAttribute="centerX" id="Djd-jT-RK7"/>
+                            <constraint firstItem="Zht-8v-sLk" firstAttribute="top" secondItem="jeU-6y-yub" secondAttribute="bottom" constant="8" id="FKu-mT-2ZU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="13Z-Pf-Hsa" secondAttribute="trailing" constant="20" id="Tie-JJ-6kh"/>
+                            <constraint firstItem="ed0-dY-0zD" firstAttribute="top" secondItem="13Z-Pf-Hsa" secondAttribute="bottom" constant="20" id="mwQ-qo-8Hy"/>
+                            <constraint firstItem="13Z-Pf-Hsa" firstAttribute="leading" secondItem="dmW-rJ-3Ih" secondAttribute="leadingMargin" constant="20" id="tTy-4P-fsW"/>
+                            <constraint firstAttribute="centerX" secondItem="ed0-dY-0zD" secondAttribute="centerX" id="zkk-Wc-MsM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pageLabel" destination="ed0-dY-0zD" id="YZ4-us-bH1"/>
+                        <outlet property="textView" destination="13Z-Pf-Hsa" id="gUB-Q4-zOY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HoP-rV-Kid" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1570" y="1088"/>
+        </scene>
         <!--Character Detail View Controller-->
         <scene sceneID="EqF-Qd-Vru">
             <objects>
@@ -148,6 +199,16 @@
             </objects>
             <point key="canvasLocation" x="750" y="376"/>
         </scene>
+        <!--Book-->
+        <scene sceneID="fU1-3P-eIH">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="bVM-d6-fiU" customClass="BookViewController" customModule="Wonderland" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Book" image="tab-book" id="LaM-UY-uWK"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1BI-Gy-bJe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="1088"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
@@ -161,6 +222,7 @@
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="PFd-wy-fqZ" kind="relationship" relationship="viewControllers" id="4wD-yp-Ijv"/>
+                        <segue destination="bVM-d6-fiU" kind="relationship" relationship="viewControllers" id="HyV-mO-oxi"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -170,6 +232,7 @@
     </scenes>
     <resources>
         <image name="info-alice" width="353" height="480"/>
+        <image name="tab-book" width="30" height="30"/>
         <image name="tab-chars" width="30" height="30"/>
         <image name="tab-info" width="30" height="30"/>
     </resources>
