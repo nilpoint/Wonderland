@@ -27,4 +27,29 @@ class BookViewController: UIPageViewController {
     let firstPage = bookSource.load(page: 1, pageViewController: self)!
     setViewControllers([firstPage], direction: .Forward, animated: false, completion: nil)
   }
+  
+  // MARK: Change font by traitcollection
+  
+  override func viewWillAppear(animated: Bool) {
+    super.viewWillAppear(animated)
+    adaptViewsToTraitCollection(traitCollection)
+  }
+  
+  override func willTransitionToTraitCollection(newCollection: UITraitCollection, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
+    adaptViewsToTraitCollection(newCollection);
+  }
+  
+  func adaptViewsToTraitCollection(traits: UITraitCollection) {
+    let compactWidth = ( traitCollection.horizontalSizeClass == .Compact )
+    
+    var fontSize: CGFloat = 18.0
+    if compactWidth {
+      fontSize = 14.0
+    }
+    let paginator = bookSource.paginator
+    let currentFont = paginator.font
+    if currentFont.pointSize != fontSize {
+      paginator.font = currentFont.fontWithSize(fontSize)
+    }
+  }
 }
