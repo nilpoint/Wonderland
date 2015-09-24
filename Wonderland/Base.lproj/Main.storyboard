@@ -212,24 +212,38 @@ a.k.a. Charles Lutwidge Dodgson
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysD-Oy-AqW">
-                                <rect key="frame" x="279" y="146" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysD-Oy-AqW">
+                                <rect key="frame" x="279" y="104" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S1N-qS-hTQ">
-                                <rect key="frame" x="100" y="175" width="400" height="250"/>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VSP-Ef-goc">
-                                <rect key="frame" x="100" y="433" width="400" height="128"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VSP-Ef-goc">
+                                <rect key="frame" x="46" y="415" width="508" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="VTv-Xt-Hf1"/>
+                                </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="250" image="char-alice" translatesAutoresizingMaskIntoConstraints="NO" id="S1N-qS-hTQ">
+                                <rect key="frame" x="56" y="133" width="488" height="274"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="ysD-Oy-AqW" secondAttribute="centerX" id="0cc-fp-kIz"/>
+                            <constraint firstItem="ysD-Oy-AqW" firstAttribute="top" secondItem="THG-A8-Cha" secondAttribute="bottom" constant="40" id="4jP-9R-h8y"/>
+                            <constraint firstItem="VSP-Ef-goc" firstAttribute="leading" secondItem="anq-gg-vNs" secondAttribute="leadingMargin" constant="30" id="5pn-Hv-gNJ"/>
+                            <constraint firstItem="VSP-Ef-goc" firstAttribute="top" secondItem="S1N-qS-hTQ" secondAttribute="bottom" constant="8" symbolic="YES" id="Ip4-2p-RnE"/>
+                            <constraint firstItem="S1N-qS-hTQ" firstAttribute="top" secondItem="ysD-Oy-AqW" secondAttribute="bottom" constant="8" id="Wft-WT-icz"/>
+                            <constraint firstItem="S1N-qS-hTQ" firstAttribute="leading" secondItem="anq-gg-vNs" secondAttribute="leadingMargin" constant="40" id="aay-JP-WZL"/>
+                            <constraint firstItem="WeG-5F-xvv" firstAttribute="top" relation="greaterThanOrEqual" secondItem="VSP-Ef-goc" secondAttribute="bottom" constant="8" symbolic="YES" id="lgz-yO-qrU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VSP-Ef-goc" secondAttribute="trailing" constant="30" id="uyg-fh-BWb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="S1N-qS-hTQ" secondAttribute="trailing" constant="40" id="xvg-35-NJl"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="descriptionView" destination="VSP-Ef-goc" id="4aa-h6-vcF"/>
@@ -290,6 +304,7 @@ a.k.a. Charles Lutwidge Dodgson
         </scene>
     </scenes>
     <resources>
+        <image name="char-alice" width="282" height="420"/>
         <image name="info-alice" width="353" height="480"/>
         <image name="info-charles" width="328" height="488"/>
         <image name="tab-book" width="30" height="30"/>
