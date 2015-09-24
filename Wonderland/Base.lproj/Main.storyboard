@@ -17,14 +17,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Alice’s Adventures in Wonderland" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxs-Gx-qpt">
-                                <rect key="frame" x="179" y="121" width="243" height="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alice’s Adventures in Wonderland" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxs-Gx-qpt">
+                                <rect key="frame" x="179" y="100" width="243" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="info-alice" translatesAutoresizingMaskIntoConstraints="NO" id="nYm-FO-ixw">
-                                <rect key="frame" x="151" y="150" width="300" height="300"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="info-alice" translatesAutoresizingMaskIntoConstraints="NO" id="nYm-FO-ixw">
+                                <rect key="frame" x="150" y="150" width="300" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="6K3-mJ-DSz"/>
                                     <constraint firstAttribute="width" constant="300" id="gS1-kE-6gC"/>
@@ -36,14 +36,27 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2TA-Fj-pUm">
+                                <rect key="frame" x="357" y="455" width="22" height="22"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="gd0-QA-p2B" kind="popoverPresentation" identifier="info" popoverAnchorView="2TA-Fj-pUm" id="SqK-oN-F9K">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="aJ5-ZZ-iaF" firstAttribute="centerY" secondItem="2TA-Fj-pUm" secondAttribute="centerY" id="5As-N2-ckh"/>
                             <constraint firstItem="aJ5-ZZ-iaF" firstAttribute="top" secondItem="nYm-FO-ixw" secondAttribute="bottom" constant="8" id="Bos-xZ-oqC"/>
                             <constraint firstItem="nYm-FO-ixw" firstAttribute="top" secondItem="gxs-Gx-qpt" secondAttribute="bottom" constant="30" id="Bzg-uC-APb"/>
                             <constraint firstAttribute="centerX" secondItem="gxs-Gx-qpt" secondAttribute="centerX" id="LZa-9h-7d7"/>
                             <constraint firstAttribute="centerX" secondItem="nYm-FO-ixw" secondAttribute="centerX" id="WyT-dI-edH"/>
                             <constraint firstAttribute="centerY" secondItem="nYm-FO-ixw" secondAttribute="centerY" id="cJV-Ze-un6"/>
+                            <constraint firstItem="2TA-Fj-pUm" firstAttribute="leading" secondItem="aJ5-ZZ-iaF" secondAttribute="trailing" constant="8" id="ewS-YT-Ng0"/>
                             <constraint firstAttribute="centerX" secondItem="aJ5-ZZ-iaF" secondAttribute="centerX" id="qs3-Zx-o8P"/>
                         </constraints>
                     </view>
@@ -52,6 +65,52 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="750" y="-320"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="I0n-RN-mG6">
+            <objects>
+                <viewController id="gd0-QA-p2B" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PIL-K7-K1r"/>
+                        <viewControllerLayoutGuide type="bottom" id="4d3-Pw-Gmk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cnw-zB-Umy">
+                        <rect key="frame" x="0.0" y="0.0" width="250" height="340"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="info-charles" translatesAutoresizingMaskIntoConstraints="NO" id="3tF-0D-bGr">
+                                <rect key="frame" x="43" y="40" width="164" height="224"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="224" id="EaT-8A-jdt"/>
+                                    <constraint firstAttribute="width" constant="164" id="lCY-3Q-Mtr"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LIT-yv-hsQ">
+                                <rect key="frame" x="24" y="272" width="202" height="43"/>
+                                <string key="text">Lewis Carroll
+a.k.a. Charles Lutwidge Dodgson
+27 January 1832 – 14 January 1898</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="LIT-yv-hsQ" secondAttribute="trailing" constant="8" id="1vJ-mU-Dju"/>
+                            <constraint firstItem="LIT-yv-hsQ" firstAttribute="top" secondItem="3tF-0D-bGr" secondAttribute="bottom" constant="8" id="KMX-Li-Kfz"/>
+                            <constraint firstAttribute="centerX" secondItem="3tF-0D-bGr" secondAttribute="centerX" id="Ngz-pI-giJ"/>
+                            <constraint firstItem="3tF-0D-bGr" firstAttribute="top" secondItem="PIL-K7-K1r" secondAttribute="bottom" constant="20" id="dVy-6k-lWF"/>
+                            <constraint firstItem="LIT-yv-hsQ" firstAttribute="leading" secondItem="cnw-zB-Umy" secondAttribute="leadingMargin" constant="8" id="qg1-3m-NJo"/>
+                        </constraints>
+                    </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="250" height="340"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="250" height="340"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SdM-Kk-C86" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1405" y="-320"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="khg-hh-xu4">
@@ -232,6 +291,7 @@
     </scenes>
     <resources>
         <image name="info-alice" width="353" height="480"/>
+        <image name="info-charles" width="328" height="488"/>
         <image name="tab-book" width="30" height="30"/>
         <image name="tab-chars" width="30" height="30"/>
         <image name="tab-info" width="30" height="30"/>

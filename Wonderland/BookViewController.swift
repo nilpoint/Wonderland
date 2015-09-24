@@ -26,6 +26,5 @@ class BookViewController: UIPageViewController {
     // This must be done programmatically before the page view controller appears.
     let firstPage = bookSource.load(page: 1, pageViewController: self)!
     setViewControllers([firstPage], direction: .Forward, animated: false, completion: nil)
-//    setViewControllers([firstPage], direction: .Forward, animated: false, completion: nil)
   }
 }
